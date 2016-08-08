@@ -41,16 +41,18 @@ class Encryption
 
 
 
-//encrypt a file
+
 
 $init = 0;
 $how_many_per_block = 1024; //chars; //every block will be a line
 $key = 'my password';
-//echo 'to encrypt file<br />';
 
 $file_to_encrypt = 'file_to_encrypt_big.txt';;
 $encrypted_file='file_to_encrypt_encrypted.txt';
 $encrypted_decrypted_file = 'file_to_encrypt_encrypted_decrypted.txt';
+
+
+// LET's encrypt
 
 $data = file_get_contents($file_to_encrypt);;
 if(!$data) die('no data');
